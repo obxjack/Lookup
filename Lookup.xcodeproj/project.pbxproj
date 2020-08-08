@@ -14,6 +14,13 @@
 		0462D45024DE4541005B4088 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0462D44E24DE4541005B4088 /* Main.storyboard */; };
 		0462D45C24DE4541005B4088 /* LookupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462D45B24DE4541005B4088 /* LookupTests.swift */; };
 		0462D46724DE4541005B4088 /* LookupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462D46624DE4541005B4088 /* LookupUITests.swift */; };
+		0462D47B24DE455E005B4088 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0462D47A24DE455E005B4088 /* Cocoa.framework */; };
+		0462D47E24DE455E005B4088 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462D47D24DE455E005B4088 /* SafariExtensionHandler.swift */; };
+		0462D48024DE455E005B4088 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462D47F24DE455E005B4088 /* SafariExtensionViewController.swift */; };
+		0462D48324DE455E005B4088 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0462D48124DE455E005B4088 /* SafariExtensionViewController.xib */; };
+		0462D48624DE455E005B4088 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 0462D48524DE455E005B4088 /* script.js */; };
+		0462D48824DE455E005B4088 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0462D48724DE455E005B4088 /* ToolbarItemIcon.pdf */; };
+		0462D48C24DE455E005B4088 /* Movie.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0462D47824DE455E005B4088 /* Movie.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +38,28 @@
 			remoteGlobalIDString = 0462D44124DE4541005B4088;
 			remoteInfo = Lookup;
 		};
+		0462D48A24DE455E005B4088 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0462D43A24DE4540005B4088 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0462D47724DE455E005B4088;
+			remoteInfo = Movie;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0462D49024DE455E005B4088 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0462D48C24DE455E005B4088 /* Movie.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0462D44224DE4541005B4088 /* Lookup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lookup.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +76,15 @@
 		0462D46224DE4541005B4088 /* LookupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LookupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0462D46624DE4541005B4088 /* LookupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookupUITests.swift; sourceTree = "<group>"; };
 		0462D46824DE4541005B4088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0462D47824DE455E005B4088 /* Movie.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Movie.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0462D47A24DE455E005B4088 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0462D47D24DE455E005B4088 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		0462D47F24DE455E005B4088 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		0462D48224DE455E005B4088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		0462D48424DE455E005B4088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0462D48524DE455E005B4088 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		0462D48724DE455E005B4088 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		0462D48924DE455E005B4088 /* Movie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Movie.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +109,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0462D47524DE455E005B4088 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0462D47B24DE455E005B4088 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,6 +126,8 @@
 				0462D44424DE4541005B4088 /* Lookup */,
 				0462D45A24DE4541005B4088 /* LookupTests */,
 				0462D46524DE4541005B4088 /* LookupUITests */,
+				0462D47C24DE455E005B4088 /* Movie */,
+				0462D47924DE455E005B4088 /* Frameworks */,
 				0462D44324DE4541005B4088 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,6 +138,7 @@
 				0462D44224DE4541005B4088 /* Lookup.app */,
 				0462D45724DE4541005B4088 /* LookupTests.xctest */,
 				0462D46224DE4541005B4088 /* LookupUITests.xctest */,
+				0462D47824DE455E005B4088 /* Movie.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,6 +183,28 @@
 			path = LookupUITests;
 			sourceTree = "<group>";
 		};
+		0462D47924DE455E005B4088 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0462D47A24DE455E005B4088 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0462D47C24DE455E005B4088 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				0462D47D24DE455E005B4088 /* SafariExtensionHandler.swift */,
+				0462D47F24DE455E005B4088 /* SafariExtensionViewController.swift */,
+				0462D48124DE455E005B4088 /* SafariExtensionViewController.xib */,
+				0462D48424DE455E005B4088 /* Info.plist */,
+				0462D48524DE455E005B4088 /* script.js */,
+				0462D48724DE455E005B4088 /* ToolbarItemIcon.pdf */,
+				0462D48924DE455E005B4088 /* Movie.entitlements */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,10 +215,12 @@
 				0462D43E24DE4541005B4088 /* Sources */,
 				0462D43F24DE4541005B4088 /* Frameworks */,
 				0462D44024DE4541005B4088 /* Resources */,
+				0462D49024DE455E005B4088 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0462D48B24DE455E005B4088 /* PBXTargetDependency */,
 			);
 			name = Lookup;
 			productName = Lookup;
@@ -191,6 +263,23 @@
 			productReference = 0462D46224DE4541005B4088 /* LookupUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		0462D47724DE455E005B4088 /* Movie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0462D48D24DE455E005B4088 /* Build configuration list for PBXNativeTarget "Movie" */;
+			buildPhases = (
+				0462D47424DE455E005B4088 /* Sources */,
+				0462D47524DE455E005B4088 /* Frameworks */,
+				0462D47624DE455E005B4088 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Movie;
+			productName = Movie;
+			productReference = 0462D47824DE455E005B4088 /* Movie.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -212,6 +301,9 @@
 						CreatedOnToolsVersion = 11.5;
 						TestTargetID = 0462D44124DE4541005B4088;
 					};
+					0462D47724DE455E005B4088 = {
+						CreatedOnToolsVersion = 11.5;
+					};
 				};
 			};
 			buildConfigurationList = 0462D43D24DE4540005B4088 /* Build configuration list for PBXProject "Lookup" */;
@@ -230,6 +322,7 @@
 				0462D44124DE4541005B4088 /* Lookup */,
 				0462D45624DE4541005B4088 /* LookupTests */,
 				0462D46124DE4541005B4088 /* LookupUITests */,
+				0462D47724DE455E005B4088 /* Movie */,
 			);
 		};
 /* End PBXProject section */
@@ -256,6 +349,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0462D47624DE455E005B4088 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0462D48824DE455E005B4088 /* ToolbarItemIcon.pdf in Resources */,
+				0462D48324DE455E005B4088 /* SafariExtensionViewController.xib in Resources */,
+				0462D48624DE455E005B4088 /* script.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +390,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0462D47424DE455E005B4088 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0462D48024DE455E005B4088 /* SafariExtensionViewController.swift in Sources */,
+				0462D47E24DE455E005B4088 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -300,6 +412,11 @@
 			target = 0462D44124DE4541005B4088 /* Lookup */;
 			targetProxy = 0462D46324DE4541005B4088 /* PBXContainerItemProxy */;
 		};
+		0462D48B24DE455E005B4088 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0462D47724DE455E005B4088 /* Movie */;
+			targetProxy = 0462D48A24DE455E005B4088 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -309,6 +426,14 @@
 				0462D44F24DE4541005B4088 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0462D48124DE455E005B4088 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0462D48224DE455E005B4088 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -430,6 +555,7 @@
 		0462D46C24DE4541005B4088 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Lookup/Lookup.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -453,6 +579,7 @@
 		0462D46D24DE4541005B4088 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Lookup/Lookup.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -557,6 +684,46 @@
 			};
 			name = Release;
 		};
+		0462D48E24DE455E005B4088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Movie/Movie.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TMUAY3YTB5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Movie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mytv.Lookup.Movie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0462D48F24DE455E005B4088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Movie/Movie.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TMUAY3YTB5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Movie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mytv.Lookup.Movie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -592,6 +759,15 @@
 			buildConfigurations = (
 				0462D47224DE4541005B4088 /* Debug */,
 				0462D47324DE4541005B4088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0462D48D24DE455E005B4088 /* Build configuration list for PBXNativeTarget "Movie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0462D48E24DE455E005B4088 /* Debug */,
+				0462D48F24DE455E005B4088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
